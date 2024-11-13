@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+body {
+    background: var(--Primary, #F7F7F7);
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.main-center-col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.label-m-medium, .nav-links, li, a, h1, h2, h3, p {
+    color: var(--Gray-contrast-1, #4E4E4E);
+    /* Montserrat/Label/Mobile/Medium */
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+p {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bttn-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10.25rem;
+    background: var(--Gray-contrast-3, #1A1A1A);
+    color: var(--Gray-contrast-1, #ffffff);
+    border: 0;
+    cursor: pointer;
+}
+.bttn-fill:hover {
+    background: var(--Gray-contrast-3, #6d6d6d);
+    color: var(--Gray-contrast-1, #F6F6F6);
+    transition: all 0.3s ease 0s;
+}
+.bttn-small {
+    height: 2rem;
+    padding: 0 15px;
+}
+.bttn-regular {
+    height: 2.5rem;
+    min-width: 7.5rem;
+    width: 15rem;
+}
+
+.border-section {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 0.5rem;
+    background: #F2F2F2;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 1.0625rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--Gray-base-1, #FCFCFC);
+}
+.nav-links {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.625rem;
+    transition: all 0.3s ease 0s;
+}
+
+.section-nav {
+    display: flex;
+    gap:1.625rem;
+    cursor: pointer;
+}
+
+.label-m-medium, .nav-links, li, a:hover { 
+    color: var(--Gray-contrast-1, #999999);
+}
+
+
+/* hero section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+h1 {
+    color: var(--Gray-contrast-3, #1A1A1A);
+    text-align: right;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.104%; /* 5.00519rem */
+    align-self: stretch;
+}
+.font-normal-bold-m {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container-subheading {
+    background: var(--Gray-contrast-3, #1A1A1A);
+    Display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    justify-content: end;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.font-normal-300 {
+    color: var(--Gray-base-2, #F6F6F6);
+    text-align: right;
+
+    /* Montserrat/Heading 1 (H1)/Mobile/Light */
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+/* title-section */
+.container-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: flex-start;
+    align-content: flex-start; */
+    gap: 2.5rem;
+    align-self: stretch;
+}
+
+.font-heading-normal-500 {
+    color: var(--Gray-contrast-1, #4E4E4E);
+    text-align: center;
+
+    /* Montserrat/Paragraph/Mobile/Regular */
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.font-caption-normal-400 {
+    font-family: Montserrat;
+    color: var(--Gray-contrast-1, #a9a9a9);
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.font-italic-extrabold-m {
+    /* Montserrat/Qoute/Mobile/ExtraBold Italic */
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+}
+.p-center {
+    text-align: center;
+}
+.carousel-container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+  
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+    width: calc(150px * 12 + 20px * 11);
+}
+  
+.carousel img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Keyframe animation for continuous scrolling effect */
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-150px * 6 - 20px * 6));
+    }
+  }
+
+/* Portfolio section */
+.gap-col {
+    gap: 2.5rem;
+}
+.card-thumbnail {
+    display: flex;
+    min-width: 18rem;
+    max-width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    border-radius: 0.25rem;
+    background: var(--Gray-base-3, #E6E6E6);
+}
+.img-thumbnail {
+    width: 100%; /* or any desired width */
+    height: 10.1875rem;
+    overflow: hidden;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.img-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.test1 {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.font-normal-500 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.font-p-normal-300 {
+    font-family: Montserrat;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.text-align-r {
+    text-align: right;
+}
+  
+
+/* Contact section */
+.border-fill {
+    padding: 1.5rem 3.25rem;
+    gap: 2rem;
+    border-radius: 0%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: var(--Gray-contrast-3, #1A1A1A);
+    justify-content: center;
+}
+
+.font-color-white {
+    color: #FCFCFC;
+}
+  
+.inputfield {
+    display: flex;
+    min-width: 15.625rem;
+    max-width: 28.25rem;
+    padding: 0.875rem;
+
+    background-color: #07050500;
+    border-style:solid;
+    border-color: #F6F6F6;
+    border-radius: 0.5rem;
+    color: white;       /* Sets the font color to white */
+    caret-color: white; /* Sets the cursor color to white */
+
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.inputfield-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-self: stretch;
+
+}
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.bttn-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10.25rem;
+    background: var(--State-Layers-On-Primary-Opacity-08, rgba(255, 255, 255, 0.08));    color: var(--Gray-contrast-1, #ffffff);
+    border: 0;
+    cursor: pointer;
+}
+.bttn-white:hover {
+    background: var(--Gray-contrast-3, #6d6d6d);
+    color: var(--Gray-contrast-1, #F6F6F6);
+    transition: all 0.3s ease 0s;
+}
+
+
