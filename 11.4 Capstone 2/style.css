@@ -4,7 +4,6 @@
 * {
     padding: 0%;
     margin: 0%;
-
 }
 body {
     background: var(--Primary, #F7F7F7);
@@ -62,6 +61,8 @@ p {
     background: var(--Gray-contrast-3, #6d6d6d);
     color: var(--Gray-contrast-1, #F6F6F6);
     transition: all 0.3s ease 0s;
+    cursor: pointer;
+
 }
 .bttn-small {
     height: 2rem;
@@ -81,6 +82,11 @@ p {
 
     border-radius: 0.5rem;
     background: #F2F2F2;
+}
+
+.logo {
+    fill: #313131;
+
 }
 
 /* Navigation bar */
@@ -293,7 +299,24 @@ h1 {
 }
 
 .font-color-white {
-    color: #FCFCFC;
+    color: #ffffff;
+}
+
+.svg-fill-white {
+    fill: rgb(255, 255, 255) !important;
+}
+
+.profilePic {
+    height: auto;
+    width: 7.5rem;
+    border-radius: 5rem;
+    border: 7px solid var(--Gray-base-1, #FCFCFC);
+}
+
+.footer {
+    fill: white;
+    height: auto;
+    width: 3rem;
 }
   
 .inputfield {
