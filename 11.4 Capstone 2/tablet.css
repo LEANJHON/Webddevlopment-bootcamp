@@ -13,9 +13,14 @@
         display: none;
     }
     h1 {
-        font-size: 25rem;;
+        font-size: 10-rem;
+        padding: 1rem;
     }
-    .font-normal-300m {
-        font-size: 3rem;;
+    .font-normal-300 {
+        font-size: 5rem;
     }
+    .container-subheading{
+        flex-direction: row;
+    }
+    
 }
