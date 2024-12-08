@@ -258,11 +258,12 @@ h1 {
     height: 10.1875rem;
     overflow: hidden;
     border-radius: 0.25rem 0.25rem 0 0;
+
 }
 
 .card-thumbnail:hover, .img-thumbnail:hover {
     background: var(--Gray-base-3, #d7d7d7);
-    cursor: pointer;
+
 }
     
 
@@ -299,8 +300,6 @@ h1 {
     text-align: right;
 }
 
-
-  
 
 /* Contact section */
 .border-fill {
