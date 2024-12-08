@@ -13,22 +13,25 @@
         display: none;
     }
     h1 {
-        font-size: 10rem;
+        font-size: 15rem;
         padding: 1rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 300;
         padding: 1rem;
     }
     .font-normal-300 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .container-subheading{
         flex-direction: row;
     }
     
-    .border-section {
-        width: 80%;
+    .border-test-test {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        gap: 16px;
     }
 }
