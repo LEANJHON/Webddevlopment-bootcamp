@@ -235,7 +235,7 @@ h1 {
 .gap-col {
     gap: 2.5rem;
 }
-.card-thumbnail {
+.card-thumbnail, .aCard {
     display: flex;
     min-width: 18rem;
     max-width: 20rem;
@@ -246,12 +246,25 @@ h1 {
     border-radius: 0.25rem;
     background: var(--Gray-base-3, #E6E6E6);
 }
+.truncate-multi {
+    display: -webkit-box; /* Use flex-like layout for webkit browsers */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Set the orientation to vertical */
+     overflow: hidden; /* Hide overflowing content */
+    max-width: auto; /* Optional: Add a width */
+}
 .img-thumbnail {
     width: 100%; /* or any desired width */
     height: 10.1875rem;
     overflow: hidden;
     border-radius: 0.25rem 0.25rem 0 0;
 }
+
+.card-thumbnail:hover, .img-thumbnail:hover {
+    background: var(--Gray-base-3, #d7d7d7);
+    cursor: pointer;
+}
+    
 
 .img-thumbnail img {
     width: 100%;
@@ -285,6 +298,8 @@ h1 {
 .text-align-r {
     text-align: right;
 }
+
+
   
 
 /* Contact section */
