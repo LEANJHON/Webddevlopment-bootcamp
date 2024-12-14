@@ -388,7 +388,7 @@ h1 {
 /* Footer section */
 footer {
     background: var(--Gray-base-1, #FCFCFC);
-    padding: 1rem 0 ;
+    padding: .5rem 0 ;
 
 
 }
@@ -397,7 +397,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: .5rem;
-    padding: 1rem 0 0 0;
     align-self: stretch;
 }
 
