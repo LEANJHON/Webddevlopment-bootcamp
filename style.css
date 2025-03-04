@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.color-lightRed {
+    background: #F0947C;
+
+}
+.color-lightBlue {
+    background: #7BBDF1;
+}
+.color-lightPurple {
+    background: #B880FF;
+ }
+ .color-lightIndigo {
+    background: #719BFF;
+}
+
 
 * {
     padding: 0%;
@@ -367,6 +381,23 @@ h1 {
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
+}
+.container-flex-row {
+    display: flex;
+    padding: 0%;
+    gap: .5rem;
+
+}
+.chip {
+    min-width: 3.125rem;
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1.875rem;
+    text-align: center;
+    color: #F6F6F6;
+
 }
 
 .bttn-white {
